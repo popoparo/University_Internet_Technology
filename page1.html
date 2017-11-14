@@ -1,8 +1,16 @@
 <!DOCTYPE>
 <html>
     <head>
-        <title>О сериале</title>
-        <body  background="images/bg.jpg">
+            <meta http-equiv="Content-Type" content="text/html; charset=utf-8">            
+        <title>О сериале</title> 
+        <link rel="stylesheet" href="style.css" type="text/css">
+        <style type="text/css">
+        body{background-image: url(images/bg.jpg)}
+        div#menu{font-family: Arial, Helvetica, sans-serif; color:rgb(26, 26, 26)}
+        p.Menu{font-family: 'Times New Roman', Times, serif}
+        </style>
+    </head>
+        <body>
             <table align="center" bgcolor="#C0C0C0"  width="900" border="1" cellspacing="0" cellpadding="0">
                 <tr height="90">
                     <td align="center" colspan="2"><a href="https://vlk-casino-club.com/">
@@ -10,17 +18,17 @@
                 </tr>
 <tr>
     <td valign="top" align="center" width="200">
-        <div>Меню</div>
-        <p><a href="index.html">Главная</a></p>
-        <p><a href="page1.html">О сериале</a></p>
-        <p><a href="page2.html">Съемочная группа</a></p>
-        <p><a href="page3.html">Галерея</a></p>
+        <div id="menu"><b>Меню</b></div>
+        <p><a href="index.html" class="Menu">Главная</a></p>
+        <p><a href="page1.html" class="Menu">О сериале</a></p>
+        <p><a href="page2.html" class="Menu">Съемочная группа</a></p>
+        <p><a href="page3.html" class="Menu">Галерея</a></p>
     <br/>
     <form action="form.txt" method="POST">
-            <label for="first_name">Имя</label>
+            <label for="first_name" style="font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif">Имя</label>
             <input id="first_name" type="text" placeholder="Введите своё имя">
             <br/>
-            <label for="password">Пароль</label>
+            <label for="password" style="font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif">Пароль</label>
             <input id="password" type="password" placeholder="Введите пароль">
             <br/>
             <button>Войти</button>
@@ -49,5 +57,4 @@
                     </body>
                   </html> 
         </body>
-    </head>
 </html>
