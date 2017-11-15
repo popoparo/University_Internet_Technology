@@ -7,7 +7,6 @@
         <style type="text/css">
         body{background-image: url(images/bg.jpg)}
         div#menu{font-family: Arial, Helvetica, sans-serif; color:rgb(26, 26, 26)}
-        p.Menu{font-family: 'Times New Roman', Times, serif}
         </style>
     </head>
         <body>
@@ -19,10 +18,10 @@
 <tr>
     <td valign="top" align="center" width="200">
         <div id="menu"><b>Меню</b></div>
-        <p><a href="index.html" class="Menu">Главная</a></p>
-        <p><a href="page1.html" class="Menu">О сериале</a></p>
-        <p><a href="page2.html" class="Menu">Съемочная группа</a></p>
-        <p><a href="page3.html" class="Menu">Галерея</a></p>
+        <p class="Menu"><a href="index.html" >Главная</a></p>
+        <p class="Menu"><a href="page1.html">О сериале</a></p>
+        <p class="Menu"><a href="page2.html">Съемочная группа</a></p>
+        <p class="Menu"><a href="page3.html">Галерея</a></p>
     <br/>
     <form action="form.txt" method="POST">
             <label for="first_name" style="font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif">
@@ -47,6 +46,46 @@
         <p><img src="images/Movies_American_TV_series_This_detective_095112_.jpg" alt="index image"></p>
         <hr />
         <p><h3><b>Добро пожаловать на наш фан-сайт! Он посвящён сериалу <a href="https://ru.wikipedia.org/wiki/Настоящий_детектив">"Настоящий детектив"</a>. Приятно провести время.</b></h3></p>
+        <p>
+                <form name="taschenrechner" id="calculator">
+                                  <table>
+                                     <tr>                       
+                                        <td>                                                      
+                                         <input type="text" name="input" size="16" class="display">                 
+                            </td>                        
+                             </tr>                       
+                                  <tr>                       
+                              <td class="buttons">                   
+                              <input type="button" name="ein" value="1" OnClick="taschenrechner.input.value += '1'">
+                              <input type="button" name="zwei" value="2" OnClick="taschenrechner.input.value += '2'">                  
+                              <input type="button" name="drei" value="3" OnClick="taschenrechner.input.value += '3'">
+                              <input type="button" name="add" value="+" onclick="taschenrechner.input.value += '+'" >
+                              <br>
+                              <input type="button" name="vier" value="4" OnClick="taschenrechner.input.value += '4'">
+                                  <input type="button" name="funf" value="5" OnClick="taschenrechner.input.value += '5'">
+                                  <input type="button" name="sechs" value="6" OnClick="taschenrechner.input.value += '6'">
+                                  <input type="button" name="sub" value="-" OnClick="taschenrechner.input.value += '-'">
+                                  <br>
+                                  <input type="button" name="sieben" value="7" OnClick="taschenrechner.input.value += '7'">
+                                  <input type="button" name="acht" value="8" OnClick="taschenrechner.input.value += '8'">
+                                  <input type="button" name="neun" value="9" OnClick="taschenrechner.input.value += '9'">
+                                  <input type="button" name="zehn" value="x" OnClick="taschenrechner.input.value += '*'">
+                                  <br>
+                                  <input type="button" name="clear" value="c" OnClick="taschenrechner.input.value = ''">
+                                  <input type="button" name="null" value="0" OnClick="taschenrechner.input.value += '0'">
+                                  <input type="button" name="macht" value="=" OnClick="taschenrechner.input.value = eval(taschenrechner.input.value)">
+                                  <input type="button" name="div" value="/" OnClick="taschenrechner.input.value += '/'">
+                        
+                              </td>
+                        
+                              </tr>
+
+                              </table>
+                        
+                         
+                        </form>
+                        
+        </p>
     </td>
 </tr>
 <tr height="20">
